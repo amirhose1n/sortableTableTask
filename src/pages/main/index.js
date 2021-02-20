@@ -43,7 +43,6 @@ const Main = () => {
     },[myEfficientFn, queryValue, options])
 
     const handleFiltersChange = (e) => {
-        console.log('handlefilterChange');
         history.push(`/main?${serialize(e)}`);
         setQueryValues(e);
     }
