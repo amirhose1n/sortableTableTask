@@ -1,0 +1,40 @@
+
+ 
+ .table-box{
+     width:100%;
+     overflow-x: scroll;
+     padding-top:10px;
+     padding-bottom: 10px;
+     margin-bottom: 10px;;
+ }
+
+ table{
+    background-color: lightgray;
+    text-align: center;
+    min-width: 100%;
+  }
+
+  table, th, td {
+    border: 1px solid gray;
+    border-spacing: unset;
+  }
+
+  table > tbody > tr {
+    background-color: white;
+    cursor: pointer;
+  }
+
+  table > tbody > tr:nth-child(2n) {
+    background-color: lightgray;
+  }
+
+  table > thead {
+    background-color: #f9c79e;
+    cursor: pointer;
+  }
+
+  td,th { padding: 5px; }
+
+  .active-tr{
+    background-color: goldenrod !important;
+  }

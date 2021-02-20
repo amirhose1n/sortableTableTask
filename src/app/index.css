@@ -1,0 +1,59 @@
+
+  @font-face {
+    font-family: "NunitoSans";
+    src: url('../public/fonts/NunitoSans-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "NunitoSans";
+    src: url('../public/fonts/NunitoSans-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "NunitoSans";
+    src: url('../public/fonts/NunitoSans-ExtraBold.ttf');
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  
+  body{
+    margin: 0 auto;
+    font-family:"NunitoSans";
+    direction: rtl;
+  }
+
+  .w-100{width:100%;}
+  .p-1{padding:1rem;}
+  .p-2{padding:2rem;}
+  .p-3{padding:3rem;}
+
+  .d-flex{display: flex;}
+  .flex-column{flex-direction: column;}
+  .justify-content-center{justify-content: center;}
+  .justify-content-between{justify-content: space-between;}
+  .justify-content-around{justify-content: space-around;}
+  .align-items-center{align-items: center;}
+  .align-items-start{align-items: flex-start;}
+  .align-items-end{align-items: flex-end;}
+  .overflow-hidden{overflow:hidden;}
+
+
+  .container{
+    width:70%;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 770px) {
+    .container{
+      width:90%;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+
+  
