@@ -26,12 +26,12 @@ const Main = () => {
     const [ pins , setPins ] = useState(localStoragePins || []);
 
     const { options , headers } = getOptions();
-    const [ tableOptions , setOptions ] = useState(options.slice(0, 10));
+    const [ tableOptions , setOptions ] = useState(options);
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
     const myEfficientFn = useCallback(
         debounce((f,options) => {
-            setOptions(searchProcess(f,options).slice(0, 10));
+            setOptions(searchProcess(f,options));
         }, 1200),
         []
       );
@@ -75,7 +75,7 @@ const Main = () => {
         <Notes />
 
         <Table 
-            options={tableOptions} 
+            options={tableOptions.slice(0, 10)} 
             headers={headers} 
             sort={handleSort}
             onpin={handleSetpins}
